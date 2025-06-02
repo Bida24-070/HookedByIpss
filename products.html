@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+ <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>Products</title>
+          <link rel="stylesheet" href="styles.css">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    </head>
+    <header>
+            <nav>
+              <ul class="sidebar">
+                    <li onclick="hideSideBar()"><a><i class="fa-solid fa-xmark"></i></a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="more.html">About</a></li>
+                    <li><a href="products.html">Shop</a></li>
+                    <li ><a href="login.html">LogIn</a></li>
+                 </ul>
+                <ul>
+                    <li>Hooked By Ipss</li>
+                    <li class="hideOnMobile"><a href="index.html">Home</a></li>
+                    <li class="hideOnMobile"><a href="more.html">About</a></li>
+                    <li class="hideOnMobile"><a href="products.html">Shop</a></li>
+                    <li class="hideOnMobile"><a href="login.html">LogIn</a></li>
+                    <li onclick="showSidebar()" ><a class="sidebar-icon"><i class="fa-solid fa-bars"></i></a></li>
+                 </ul>     
+            </nav>
+         </header>
+     <body>
+       <main>
+        <div class="overlay">
+        <h1 class="shop-title">SHOP</h1>
+      </div>
+    </main>
+     
+ <section class="products-section">
+    <div class="products-container">
+              
+        <div class="product-card" onclick="viewProduct('Granny Hat and Cardigan set', 'images/Granny Square hat and cardigan.jpeg', P280)">
+            <img src="Granny Square hat and cardigan.jpeg" alt="Granny hat and cardigan set" class="product-image">
+            <a href="proddetail.html?name=Granny hat and cardigan set%20&img=Granny Square hat and cardigan.jpeg&price=P280"><p class="product-name">Granny hat and cardigan set</p>
+            <p class="product-price">P280</p></a>
+        </div>
+
+        <div class="product-card" onclick="viewProduct('Ruffle Skirt', 'images/short ruffle skirt.jpeg', P170)">
+            <img src="short ruffle skirt.jpeg" alt="Ruffle Mini Skirt">
+            <a href="proddetail.html?name=Ruffle Skirt%20&img=short ruffle skirt.jpeg&price=P170"><p class="product-name">Ruffle Mini Skirt</p>
+            <p class="product-price">P170</p></a>
+        </div>
+
+        <div class="product-card" onclick="viewProduct('Beanie', 'images/Houndstooth Crochet Beanie (1).jpeg', P130)">
+            <img src="Houndstooth Crochet Beanie (1).jpeg" alt="Multicoloured Beanie">
+            <a href="proddetail.html?name=Beanies%20&img=Houndstooth Crochet Beanie (1).jpeg&price=P130"><p class="product-name">Beanie</p>
+            <p class="product-price">P130</p></a>
+        </div>
+
+        </a><div class="product-card">
+            <img src="Shoulder bag.jpeg" alt="Chunky Shoulder Bag">
+            <a href="proddetail.html?name=Chunky Shoulder Bag%20&img=Shoulder Bag.jpeg&price=P120"><p class="product-name">Chunky Shoulder Bag</p>
+            <p class="product-price">P120</p></a>
+        </div>
+    </div>
+
+    <div class="products-container" onclick="viewProduct('Ruffle Socks', 'images/Ruffle Socks.jpeg', P120)">
+        <div class="product-card">
+            <img src="Ruffle Socks.jpeg" alt="Ruffle Socks">
+            <a href="proddetail.html?name=Ruffle Socks%20&img=Ruffle Socks.jpeg&price=P120"><p class="product-name">Ruffle Socks</p>
+            <p class="product-price">P120</p></a>
+        </div>
+
+        <div class="product-card" onclick="viewProduct('Short Dress', 'images/Short Dress.jpeg', P200)">
+            <img src="Short Dress.jpeg" alt="Short dress">
+            <a href="proddetail.html?name=Short Dress%20&img=Short Dress.jpeg&price=P200"><p class="product-name">Short Dress</p>
+            <p class="product-price">P200</p></a>
+        </div>
+
+        <div class="product-card" onclick="viewProduct('Summer Shorts', 'images/Crotchet Shorts.jpeg', P160)">
+            <img src="Crotchet Shorts.jpeg" alt="Shorts">
+            <a href="proddetail.html?name=Summer Shorts%20&img=Crotchet Shorts.jpeg&price=P160"><p class="product-name">Summer Shorts</p>
+            <p class="product-price">P160</p></a>
+        </div>
+
+        </a><div class="product-card" onclick="viewProduct('Crotchet Top', 'images/Crotchet tank top.jpeg', P120)">
+            <img src="Crotchet tank top.jpeg" alt="Top">
+            <a href="proddetail.html?name=Crotchet Top%20&img=Crotchet tank top.jpeg&price=P120"><p class="product-name">Crotchet Top</p>
+            <p class="product-price">P120</p></a>
+        </div>
+    </div>
+    
+    <div class="products-container" onclick="viewProduct('Ribbed Beanie', 'images/knit beanies.jpeg', P150)">    
+        <div class="product-card">
+            <img src="knit beanies.jpeg" alt="Beanies">
+            <a href="proddetail.html?name=Ribbed Beanie%20&img=knit beanies.jpeg&price=P150"><p class="product-name">Ribbed Beanie</p>
+            <p class="product-price">P150</p></a>
+        </div>
+
+        <div class="product-card" onclick="viewProduct('Shrug', 'images/Shrug.jpeg', P110)">
+            <img src="Shrug.jpeg" alt="Shrug">
+            <a href="proddetail.html?name=Shrug %20&img=Shrug.jpeg&price=P110"><p class="product-name">Shrug</p>
+            <p class="product-price">P110</p></a>
+        </div>
+
+        <div class="product-card" onclick="viewProduct('Bucket Hat', 'images/Bucket Hat.jpeg', P120)">
+            <img src="Bucket Hat.jpeg" alt="Bucket Hat">
+            <a href="proddetail.html?name=Bucket Hat%20&img=Bucket Hat.jpeg&price=P170"><p class="product-name">Bucket Hat</p>
+            <p class="product-price">P120</p></a>
+        </div>
+
+        </a><div class="product-card" onclick="viewProduct('Ruffle Hat', 'images/Ruffle Hat.jpeg', P150)">
+            <img src="Ruffle Hat.jpeg" alt="Ruffle Hat">
+            <a href="proddetail.html?name=Ruffle Hat%20&img=Ruffle Hat.jpeg&price=P150"><p class="product-name">Ruffle Hat</p>
+            <p class="product-price">P150</p></a>
+        </div>
+    </div>
+    
+</section> 
+<script>
+  function showSidebar(){
+    const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'Flex'
+    }
+
+  function hideSideBar(){
+    const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'None'
+  }
+</script>
+     </body>
+    
+ </html>

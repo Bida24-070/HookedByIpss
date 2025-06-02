@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+ <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>About</title>
+          <link rel="stylesheet" href="styles.css">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    </head>
+    <header>
+            <nav>
+              <ul class="sidebar">
+                    <li onclick="hideSideBar()"><a><i class="fa-solid fa-xmark"></i></a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="more.html">About</a></li>
+                    <li><a href="products.html">Shop</a></li>
+                    <li ><a href="login.html">LogIn</a></li>
+                 </ul>
+                <ul>
+                    <li>Hooked By Ipss</li>
+                    <li class="hideOnMobile"><a href="index.html">Home</a></li>
+                    <li class="hideOnMobile"><a href="more.html">About</a></li>
+                    <li class="hideOnMobile"><a href="products.html">Shop</a></li>
+                    <li class="hideOnMobile"><a href="login.html">LogIn</a></li>
+                    <li onclick="showSidebar()" ><a class="sidebar-icon"><i class="fa-solid fa-bars"></i></a></li>
+                 </ul>      
+            </nav>
+         </header>
+ <body>
+  <div class="background-container">
+  <div class="more-container">
+    <h1 class="more-heading">MORE</h1>
+    <p class="more-text">
+      Hooked by lpss was established by lpss herself in 2025 in order to share her talent and love for yarnwork with the world. She provides products for all knitwear lovers in assorted sizes, accommodating to everyone. All pieces are made with love using high quality yarn and made to perfection.
+    </p>
+    <p class="more-text">Contact directly at:</p>
+    <div class="icons-container">
+      <div class="social-icons">
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-facebook"></i>
+      <i class="fab fa-whatsapp"></i>
+      <i class="fab fa-pinterest"></i>
+      <i class="fab fa-snapchat"></i>
+    </div> 
+    </div>
+  </div>
+  </div>
+  <script>
+  function showSidebar(){
+    const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'Flex'
+    }
+  function hideSideBar(){
+    const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'None'
+  }
+</script>
+ </body>
+ </html> 

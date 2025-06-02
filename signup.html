@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+ <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>Log In</title>
+          <link rel="stylesheet" href="styles.css">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    </head>
+<body>
+ <a href="index.html" class="return-button"><i class="fa-solid fa-arrow-left"></i></a>
+  <div class="login-container">
+    <div class="login-card">
+      <h2 class="brand-name">Hooked By <span>Ipss.</span></h2>
+      <p class="subtitle">Create your account to start shopping!</p>
+
+      <form class="login-form">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required />
+
+        <label for="email">Email / Username</label>
+        <input type="text" id="email" placeholder="Enter email or username" required />
+
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Create password" required />
+
+        <label for="confirm">Confirm Password</label>
+        <input type="password" id="confirm" placeholder="Confirm password" required />
+
+        <label for="gender">Gender</label>
+        <select id="gender" required>
+          <option value="">Select gender</option>
+          <option value="female">Female</option>
+          <option value="male">Male</option>
+          <option value="non-binary">Non-binary</option>
+          <option value="prefer-not">Prefer not to say</option>
+        </select>
+
+        <button type="submit" class="btn-login">Sign Up</button>
+      </form>
+
+      <p style="margin-top: 12px; font-size: 14px; font-weight: 900;">
+        Already have an account? 
+        <a href="login.html" class="forgot-link">Log in</a>
+      </p>
+    </div>
+  </div>
+
+</body>
+
+ </html>

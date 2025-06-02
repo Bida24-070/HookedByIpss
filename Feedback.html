@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+ <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>Feedback</title>
+          <link rel="stylesheet" href="styles.css">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    </head>
+    <body>
+     <div class="feedback-wrapper">
+        <a href="index.html" class="return-button"><i class="fa-solid fa-arrow-left"></i></a>
+        <div class="feedback-container">
+         <h2>GIVE US YOUR FEEDBACK</h2>
+          <form>
+            <input type="text" placeholder="Username" class="input-field">
+            <input type="email" placeholder="Email" class="input-field">
+             <div class="star-rating">
+              <span class="star" data-value="1">&#9733;</span>
+              <span class="star" data-value="2">&#9733;</span>
+              <span class="star" data-value="3">&#9733;</span>
+              <span class="star" data-value="4">&#9733;</span>
+              <span class="star" data-value="5">&#9733;</span>
+             </div>
+            <input type="hidden" name="rating" id="rating" />
+             <textarea placeholder="Your comments..." class="text-area"></textarea>
+              <div class="submit-wrapper">
+               <a href="#"><button type="submit" class="submit-btn" mailto="ipelosianga@gmail.com">SUBMIT</button></a>
+              </div>
+          </form>
+        </div>
+      </div>
+     <script>
+  const stars = document.querySelectorAll('.star-rating .star');
+  const ratingInput = document.getElementById('rating');
+
+  stars.forEach((star, index) => {
+    star.addEventListener('click', () => {
+      const rating = star.getAttribute('data-value');
+      ratingInput.value = rating;
+
+      stars.forEach((s, i) => {
+        s.classList.toggle('active', i < rating);
+      });
+    });
+  });
+</script>
+    </body>
+ </html>
